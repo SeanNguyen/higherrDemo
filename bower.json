@@ -1,0 +1,14 @@
+{
+  "name": "higherr",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "modernizr": "~2.8.3",
+    "angular-material": "^1.0.5",
+    "font-awesome": "^4.5.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
