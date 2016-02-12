@@ -1,14 +1,21 @@
 {
-  "name": "higherr",
-  "private": true,
+  "name": "higher",
+  "version": "0.0.0",
   "dependencies": {
-    "jquery": "~2.1.4",
-    "modernizr": "~2.8.3",
-    "angular-material": "^1.0.5",
-    "font-awesome": "^4.5.0"
+    "angular": "~1.4.0",
+    "json3": "~3.3.1",
+    "es5-shim": "~3.0.1",
+    "bootstrap": "~3.1.1",
+    "angular-resource": "~1.4.0",
+    "angular-cookies": "~1.4.0",
+    "angular-sanitize": "~1.4.0",
+    "angular-bootstrap": "~0.13.0",
+    "font-awesome": ">=4.1.0",
+    "lodash": "~2.4.1",
+    "angular-ui-router": "~0.2.15",
+    "angular-material": "^1.0.5"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^2.4.5"
+    "angular-mocks": "~1.4.0"
   }
 }
