@@ -3,18 +3,18 @@
     <h3>
       Higherr
     </h3>
-    <div class="navbar-tabs" layout layout-align="center stretch" hide-sm hide-xs>
+    <div layout layout-align="center stretch" hide-sm hide-xs>
       <div layout layout-align="center center" ng-class="{ selectedTab: nav.isActive(0) }">
-        <md-button href="/universities">Universities</md-button>
+        <md-button href="/universities" ng-disabled="nav.isActive(0)">Universities</md-button>
       </div>
       <div layout layout-align="center center" ng-class="{ selectedTab: nav.isActive(1) }">
-        <md-button href="/applications">Applications</md-button>
+        <md-button href="/applications" ng-disabled="nav.isActive(1)">Applications</md-button>
       </div>
       <div layout layout-align="center center" ng-class="{ selectedTab: nav.isActive(2) }">
-        <md-button href="/lifeandprograms">life@</md-button>
+        <md-button href="/lifeandprograms" ng-disabled="nav.isActive(2)">life@</md-button>
       </div>
       <div layout layout-align="center center" ng-class="{ selectedTab: nav.isActive(3) }">
-        <md-button href="/schoolarships">Schoolaships</md-button>
+        <md-button href="/schoolarships" ng-disabled="nav.isActive(3)">Schoolaships</md-button>
       </div>
     </div>
 
@@ -35,19 +35,19 @@
     </div>
   </div>
 
-  <div ng-show="nav.collapsedMenuVisibility" hide-gt-sm>
-    <div class="navbar-tabs" layout="column" layout-align="center stretch">
+  <div collapse="!nav.collapsedMenuVisibility" hide-gt-sm>
+    <div layout="column" layout-align="center stretch">
       <div layout layout-align="center center" ng-class="{ selectedTab: nav.isActive(0) }">
-        <md-button href="/universities">Universities</md-button>
+        <md-button href="/universities" ng-disabled="nav.isActive(0)" layout-fill>Universities</md-button>
       </div>
       <div layout layout-align="center center" ng-class="{ selectedTab: nav.isActive(1) }">
-        <md-button href="/applications">Applications</md-button>
+        <md-button href="/applications" ng-disabled="nav.isActive(1)" layout-fill>Applications</md-button>
       </div>
       <div layout layout-align="center center" ng-class="{ selectedTab: nav.isActive(2) }">
-        <md-button href="/lifeandprograms">life@</md-button>
+        <md-button href="/lifeandprograms" ng-disabled="nav.isActive(2)" layout-fill>life@</md-button>
       </div>
       <div layout layout-align="center center" ng-class="{ selectedTab: nav.isActive(3) }">
-        <md-button href="/schoolarships">Schoolaships</md-button>
+        <md-button href="/schoolarships" ng-disabled="nav.isActive(3)" layout-fill>Schoolaships</md-button>
       </div>
     </div>
 

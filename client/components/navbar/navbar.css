@@ -1,6 +1,13 @@
 .selectedTab {
-  border-top: 3px solid rgba(255,64,129, 0);;
-  border-bottom: 3px solid rgba(255,64,129, 1);
+  /*border-top: 2px solid rgba(255,64,129, 0.8);
+  border-bottom: 2px solid rgba(255,64,129, 0.8);*/
+  border-top: 2px solid rgba(240,240,240, 0.5);
+  border-bottom: 2px solid rgba(240,240,240, 0.5);
+}
+
+.selectedTab .md-button[disabled] {
+  font-weight: bold;
+  color: #FCFCFC;
 }
 
 .navbar-tabs {
