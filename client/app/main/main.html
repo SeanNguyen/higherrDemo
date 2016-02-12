@@ -41,25 +41,71 @@
         <md-tab label="Applications">
           <br>
           <div layout-gt-xs="row" layout="column" layout-margin>
-            <md-input-container md-no-float class="md-block" flex-gt-xs>
-              <input ng-model="university.name" placeholder="Application Name">
-            </md-input-container>
-            <md-input-container md-no-float class="md-block" flex-gt-xs>
-              <input ng-model="university.location" placeholder="Location">
-              <md-icon class="fa fa-map-marker fa-lg"></md-icon>
-            </md-input-container>
+            <md-autocomplete flex-gt-xs md-no-float
+                md-selected-item="main.selectedUniversity"
+                md-search-text="main.searchTextUniversity"
+                md-items="item in main.queryUnivesity(main.searchTextUniversity)"
+                md-item-text="item"
+                md-min-length="0"
+                md-floating-label="Univesity Name"
+                placeholder="Univesity Name">
+              <md-item-template>
+                <span md-highlight-text="main.searchTextUniversity" md-highlight-flags="^i">{{item}}</span>
+              </md-item-template>
+              <md-not-found>
+                No universities matching "{{main.searchTextUniversity}}" were found.
+              </md-not-found>
+            </md-autocomplete>
+            <md-autocomplete flex-gt-xs md-no-float
+                md-selected-item="main.selectedLocation"
+                md-search-text="main.searchTextLocation"
+                md-items="item in main.queryLocations(main.searchTextLocation)"
+                md-item-text="item"
+                md-min-length="0"
+                md-floating-label="Location"
+                placeholder="Univesity Name">
+              <md-item-template>
+                <span md-highlight-text="main.searchTextLocation" md-highlight-flags="^i">{{item}}</span>
+              </md-item-template>
+              <md-not-found>
+                No location matching "{{main.searchTextLocation}}" were found.
+              </md-not-found>
+            </md-autocomplete>
           </div>
         </md-tab>
         <md-tab label="Life@ and Programs">
           <br>
           <div layout-gt-xs="row" layout="column" layout-margin>
-            <md-input-container md-no-float class="md-block" flex-gt-xs>
-              <input ng-model="university.name" placeholder="Program Name">
-            </md-input-container>
-            <md-input-container md-no-float class="md-block" flex-gt-xs>
-              <input ng-model="university.location" placeholder="Location">
-              <md-icon class="fa fa-map-marker fa-lg"></md-icon>
-            </md-input-container>
+            <md-autocomplete flex-gt-xs md-no-float
+                md-selected-item="main.selectedUniversity"
+                md-search-text="main.searchTextUniversity"
+                md-items="item in main.queryUnivesity(main.searchTextUniversity)"
+                md-item-text="item"
+                md-min-length="0"
+                md-floating-label="Univesity Name"
+                placeholder="Univesity Name">
+              <md-item-template>
+                <span md-highlight-text="main.searchTextUniversity" md-highlight-flags="^i">{{item}}</span>
+              </md-item-template>
+              <md-not-found>
+                No universities matching "{{main.searchTextUniversity}}" were found.
+              </md-not-found>
+            </md-autocomplete>
+            <md-autocomplete flex-gt-xs md-no-float
+                md-selected-item="main.selectedLocation"
+                md-search-text="main.searchTextLocation"
+                md-items="item in main.queryLocations(main.searchTextLocation)"
+                md-item-text="item"
+                md-min-length="0"
+                md-floating-label="Location"
+                placeholder="Univesity Name">
+              <md-item-template>
+                <span md-highlight-text="main.searchTextLocation" md-highlight-flags="^i">{{item}}</span>
+              </md-item-template>
+              <md-not-found>
+                No location matching "{{main.searchTextLocation}}" were found.
+              </md-not-found>
+            </md-autocomplete>
           </div>
         </md-tab>
         <md-tab label="Schoolaships">
@@ -75,7 +121,7 @@
           </div>
         </md-tab>
       </md-tabs>
-      <md-button class="md-raised md-primary" layout-fill style="position: relative; top: -10px;">Search</md-button>
+      <md-button class="md-raised md-primary" layout-fill>Search</md-button>
       <a href="#">Submit a quick review</a>
     </md-whiteframe>
   </div>

@@ -11,12 +11,16 @@
   background-color: rgba(240, 240, 240, 0.95);
 }
 
+md-autocomplete[md-floating-label] md-input-container {
+  padding-bottom: 0;
+}
+
 @media (max-width: 600px) {
   .home-searchBox {
-    min-width: 90%;
+    min-width: 100%;
   }
 
   .home-searchContainer {
-    height: 550px;
+    height: 600px;
   }
 }
