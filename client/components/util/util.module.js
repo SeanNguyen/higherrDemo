@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('higherApp.util', []);
+angular.module('app.util', []);

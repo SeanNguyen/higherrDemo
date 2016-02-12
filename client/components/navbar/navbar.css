@@ -1,0 +1,8 @@
+.selectedTab {
+  border-top: 3px solid rgba(255,64,129, 0);;
+  border-bottom: 3px solid rgba(255,64,129, 1);
+}
+
+.navbar-tabs {
+  height: 100%;
+}

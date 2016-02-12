@@ -1,0 +1,18 @@
+.home-searchContainer {
+  height: 700px;
+  background-image: url("../../assets/images/search-background.jpg");
+  background-size: cover;
+}
+
+.home-searchBox {
+  min-width: 600px;
+  padding: 20px;
+  background-color: rgba(240, 240, 240, 0.95);
+}
+
+@media (max-width: 600px) {
+  .home-searchBox {
+    min-width: 0;
+    background-color: transparent;
+  }
+}

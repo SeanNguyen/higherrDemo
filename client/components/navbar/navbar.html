@@ -3,15 +3,55 @@
     <h3>
       Higherr
     </h3>
-
-    <div>
-      <md-button>Universities</md-button>
-      <md-button>Applications</md-button>
-      <md-button>life@</md-button>
-      <md-button>Schoolaships</md-button>
+    <div class="navbar-tabs" layout layout-align="center stretch" hide-sm hide-xs>
+      <div layout layout-align="center center" ng-class="{ selectedTab: nav.isActive(0) }">
+        <md-button href="/universities">Universities</md-button>
+      </div>
+      <div layout layout-align="center center" ng-class="{ selectedTab: nav.isActive(1) }">
+        <md-button href="/applications">Applications</md-button>
+      </div>
+      <div layout layout-align="center center" ng-class="{ selectedTab: nav.isActive(2) }">
+        <md-button href="/lifeandprograms">life@</md-button>
+      </div>
+      <div layout layout-align="center center" ng-class="{ selectedTab: nav.isActive(3) }">
+        <md-button href="/schoolarships">Schoolaships</md-button>
+      </div>
     </div>
 
-    <div>
+    <div hide-sm hide-xs>
+      <md-button>Sign In</md-button>
+      <md-button class="md-icon-button" aria-label="Notifications">
+        <md-icon class="fa fa-bell-o fa-lg" alt="Notifications"></md-icon>
+      </md-button>
+      <md-button class="md-icon-button" aria-label="Notifications">
+        <md-icon class="fa fa-plus fa-lg" alt="Notifications"></md-icon>
+      </md-button>
+    </div>
+
+    <div hide-gt-sm>
+      <md-button class="md-icon-button" aria-label="Notifications" ng-click='nav.toggleCollapsedMenu()'>
+        <md-icon class="fa fa-bars fa-lg" alt="Notifications"></md-icon>
+      </md-button>
+    </div>
+  </div>
+
+  <div ng-show="nav.collapsedMenuVisibility" hide-gt-sm>
+    <div class="navbar-tabs" layout="column" layout-align="center stretch">
+      <div layout layout-align="center center" ng-class="{ selectedTab: nav.isActive(0) }">
+        <md-button href="/universities">Universities</md-button>
+      </div>
+      <div layout layout-align="center center" ng-class="{ selectedTab: nav.isActive(1) }">
+        <md-button href="/applications">Applications</md-button>
+      </div>
+      <div layout layout-align="center center" ng-class="{ selectedTab: nav.isActive(2) }">
+        <md-button href="/lifeandprograms">life@</md-button>
+      </div>
+      <div layout layout-align="center center" ng-class="{ selectedTab: nav.isActive(3) }">
+        <md-button href="/schoolarships">Schoolaships</md-button>
+      </div>
+    </div>
+
+    <div layout layout-align="space-around center">
       <md-button>Sign In</md-button>
       <md-button class="md-icon-button" aria-label="Notifications">
         <md-icon class="fa fa-bell-o fa-lg" alt="Notifications"></md-icon>

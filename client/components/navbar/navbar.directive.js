@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('higherApp')
+angular.module('app')
   .directive('navbar', () => ({
     templateUrl: 'components/navbar/navbar.html',
     restrict: 'E',

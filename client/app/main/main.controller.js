@@ -2,19 +2,25 @@
 
 (function() {
 
-class MainController {
-
-  constructor($http) {
-    this.$http = $http;
-    this.awesomeThings = [];
-
-    $http.get('/api/things').then(response => {
-      this.awesomeThings = response.data;
-    });
+function MainController($stateParams) {
+  this.currentTab = 0;
+  switch($stateParams.search) {
+    case 'universities':
+      this.currentTab = 0;
+      break;
+    case 'applications':
+      this.currentTab = 1;
+      break;
+    case 'lifeandprograms':
+      this.currentTab = 2;
+      break;
+    case 'schoolarships':
+      this.currentTab = 3;
+      break;
   }
 }
 
-angular.module('higherApp')
-  .controller('MainController', MainController);
+angular.module('app')
+  .controller('MainController', ['$stateParams', MainController]);
 
 })();

@@ -1,11 +1,120 @@
 <div>
-  <div layout layout-align="center center" style="height: 700px;">
-    <div class="home-searchBox">
-      
-    </div>
+  <div layout layout-align="center center" class="home-searchContainer" hide-xs>
+    <md-whiteframe class="md-whiteframe-4dp home-searchBox" layout="column" layout-align="center center">
+      <h3>Find Universities You'd Love</h3>
+      <md-tabs md-dynamic-height md-border-bottom md-center-tabs="true" md-selected='main.currentTab' layout-fill>
+        <md-tab label="Universities" >
+          <br>
+          <div layout-gt-xs="row" layout="column" layout-margin>
+            <md-input-container md-no-float class="md-block" flex-gt-xs>
+              <input ng-model="university.name" placeholder="Univesity Name">
+            </md-input-container>
+            <md-input-container md-no-float class="md-block" flex-gt-xs>
+              <input ng-model="university.location" placeholder="Location">
+              <md-icon class="fa fa-map-marker fa-lg"></md-icon>
+            </md-input-container>
+          </div>
+        </md-tab>
+        <md-tab label="Applications">
+          <br>
+          <div layout-gt-xs="row" layout="column" layout-margin>
+            <md-input-container md-no-float class="md-block" flex-gt-xs>
+              <input ng-model="university.name" placeholder="Application Name">
+            </md-input-container>
+            <md-input-container md-no-float class="md-block" flex-gt-xs>
+              <input ng-model="university.location" placeholder="Location">
+              <md-icon class="fa fa-map-marker fa-lg"></md-icon>
+            </md-input-container>
+          </div>
+        </md-tab>
+        <md-tab label="Life@ and Programs">
+          <br>
+          <div layout-gt-xs="row" layout="column" layout-margin>
+            <md-input-container md-no-float class="md-block" flex-gt-xs>
+              <input ng-model="university.name" placeholder="Program Name">
+            </md-input-container>
+            <md-input-container md-no-float class="md-block" flex-gt-xs>
+              <input ng-model="university.location" placeholder="Location">
+              <md-icon class="fa fa-map-marker fa-lg"></md-icon>
+            </md-input-container>
+          </div>
+        </md-tab>
+        <md-tab label="Schoolaships">
+          <br>
+          <div layout-gt-xs="row" layout="column" layout-margin>
+            <md-input-container md-no-float class="md-block" flex-gt-xs>
+              <input ng-model="university.name" placeholder="Schoolaship Name">
+            </md-input-container>
+            <md-input-container md-no-float class="md-block" flex-gt-xs>
+              <input ng-model="university.location" placeholder="Location">
+              <md-icon class="fa fa-map-marker fa-lg"></md-icon>
+            </md-input-container>
+          </div>
+        </md-tab>
+      </md-tabs>
+      <md-button class="md-raised md-primary" layout-fill>Search</md-button>
+      <a href="#">Submit a quick review</a>
+    </md-whiteframe>
+  </div>
+  <div class="home-searchBox" layout="column" layout-align="center center" hide-gt-xs>
+    <h3>Find Universities You'd Love</h3>
+    <md-tabs md-dynamic-height md-border-bottom md-center-tabs="true" md-selected='main.currentTab' layout-fill>
+      <md-tab label="Universities" >
+        <br>
+        <div layout-gt-xs="row" layout="column" layout-margin>
+          <md-input-container md-no-float class="md-block" flex-gt-xs>
+            <input ng-model="university.name" placeholder="Univesity Name">
+          </md-input-container>
+          <md-input-container md-no-float class="md-block" flex-gt-xs>
+            <input ng-model="university.location" placeholder="Location">
+            <md-icon class="fa fa-map-marker fa-lg"></md-icon>
+          </md-input-container>
+        </div>
+      </md-tab>
+      <md-tab label="Applications">
+        <br>
+        <div layout-gt-xs="row" layout="column" layout-margin>
+          <md-input-container md-no-float class="md-block" flex-gt-xs>
+            <input ng-model="university.name" placeholder="Application Name">
+          </md-input-container>
+          <md-input-container md-no-float class="md-block" flex-gt-xs>
+            <input ng-model="university.location" placeholder="Location">
+            <md-icon class="fa fa-map-marker fa-lg"></md-icon>
+          </md-input-container>
+        </div>
+      </md-tab>
+      <md-tab label="Life@ and Programs">
+        <br>
+        <div layout-gt-xs="row" layout="column" layout-margin>
+          <md-input-container md-no-float class="md-block" flex-gt-xs>
+            <input ng-model="university.name" placeholder="Program Name">
+          </md-input-container>
+          <md-input-container md-no-float class="md-block" flex-gt-xs>
+            <input ng-model="university.location" placeholder="Location">
+            <md-icon class="fa fa-map-marker fa-lg"></md-icon>
+          </md-input-container>
+        </div>
+      </md-tab>
+      <md-tab label="Schoolaships">
+        <br>
+        <div layout-gt-xs="row" layout="column" layout-margin>
+          <md-input-container md-no-float class="md-block" flex-gt-xs>
+            <input ng-model="university.name" placeholder="Schoolaship Name">
+          </md-input-container>
+          <md-input-container md-no-float class="md-block" flex-gt-xs>
+            <input ng-model="university.location" placeholder="Location">
+            <md-icon class="fa fa-map-marker fa-lg"></md-icon>
+          </md-input-container>
+        </div>
+      </md-tab>
+    </md-tabs>
+    <md-button class="md-raised md-primary" layout-fill>Search</md-button>
+    <a href="#">Submit a quick review</a>
   </div>
   <hr>
-  <div>
+  <div class="container">
+    <br>
+    <br>
     <div layout="column" layout-align="center center">
       <md-button class="md-raised md-primary" style="width: 300px; height: 40px;">Sign Up</md-button>
       <div layout layout-align="center center">
@@ -18,18 +127,20 @@
         </md-button>
       </div>
     </div>
-    <div layout="column" layout-gt-xs="row" layout-align="center start" layout-margin style="margin: 10%">
-      <div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="text-justify row">
+      <div class="col-sm-6">
         <h2 layout-margin>Featured Updates</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut eleifend velit, ac sodales orci. Aliquam risus elit, tincidunt sit amet nisl quis, aliquam commodo diam. Nunc scelerisque, arcu vitae ultricies sollicitudin, enim elit aliquet lectus, a lobortis neque odio eu ex. Sed sollicitudin elit nec nulla faucibus laoreet. Donec porttitor, lorem nec porta iaculis, sapien tortor faucibus sem, fringilla vehicula velit arcu id est. Nunc vel erat nec ex mollis pharetra. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam sagittis orci ut mi commodo iaculis. Integer facilisis, ligula in accumsan aliquet, tellus ante convallis mauris, eget mattis arcu leo in nunc. Aenean lacinia ante vel turpis semper accumsan.</p>
-
         <p>Sed et metus vitae nisi varius hendrerit sed et felis. Vivamus interdum ornare turpis, ut convallis erat vehicula a. Duis consectetur placerat nibh id congue. Donec tincidunt fringilla justo, molestie dapibus felis ullamcorper nec. Nullam lectus nisl, egestas id interdum eu, tincidunt vitae magna. Quisque elementum semper magna id sagittis. Quisque pulvinar consequat fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam vel dolor placerat, cursus nulla in, vehicula nulla. Pellentesque purus ipsum, ullamcorper non venenatis ut, malesuada et sem. Suspendisse potenti. Vestibulum aliquam mi nisi, eu finibus nisi iaculis in. Pellentesque ut luctus sem. Cras nisi lorem, tristique et sodales in, tincidunt nec lorem.</p>
       </div>
 
-      <div>
+      <div class="col-sm-6">
         <h2 layout-margin>Higherr Blog and Tips</h2>
         <p>Ut finibus nulla ante, in accumsan felis ultricies eu. Cras congue sed diam a consectetur. Proin lacinia, justo ac vulputate luctus, ligula lorem scelerisque nunc, ut sollicitudin nisl velit quis justo. Donec volutpat quam tortor, sit amet auctor ipsum porta non. Cras et tincidunt mauris. Proin at egestas nulla. Curabitur at blandit leo. Vestibulum quis sem vehicula, eleifend nisl a, efficitur sapien. Duis eros sem, placerat vel maximus ac, ultrices a metus. In non pellentesque nunc. Cras leo ex, auctor vitae elit ac, fermentum egestas lacus. Morbi ac sagittis lorem. Quisque condimentum rhoncus felis, sed gravida ligula feugiat id. Nullam gravida neque et commodo euismod.</p>
-
         <p>Integer sit amet imperdiet purus. Vestibulum porta tincidunt quam. Integer ac felis maximus, imperdiet turpis non, vestibulum justo. Etiam ultrices vehicula felis, at rutrum nunc. Nunc dui magna, commodo nec tellus quis, sagittis molestie neque. Vivamus sollicitudin ultricies odio, vel pretium ante luctus vel. Donec quis nibh eget nisi mattis faucibus. Ut pulvinar quam in tellus aliquam, hendrerit gravida magna bibendum. Sed et aliquam justo. Nulla id lectus ac metus bibendum malesuada. Aliquam sollicitudin, erat eget mollis tempor, lectus augue placerat est, et ultrices leo diam eu mauris. Ut lobortis bibendum dui, et viverra diam porttitor iaculis. Proin vehicula pulvinar orci nec rhoncus. Maecenas vel neque pretium, dignissim mauris eu, fermentum turpis.</p>
       </div>
     </div>
