@@ -11,6 +11,15 @@
   background-color: rgba(240, 240, 240, 0.9);
 }
 
+.home-searchBox .selectedTab {
+  color: #046B8B;
+  border-bottom: none;
+}
+
+.home-searchBox .selectedTab .md-button[disabled] {
+  color: #046B8B !important;
+}
+
 md-autocomplete[md-floating-label] md-input-container {
   padding-bottom: 0;
 }
@@ -20,7 +29,18 @@ md-autocomplete[md-floating-label] md-input-container {
     min-width: 100%;
   }
 
+  .home-searchBox a.md-button {
+    padding: 0 5px 0 5px;
+    margin: 6px 0px 6px 0px;
+    min-width: 0;
+    font-size: 12px;
+  }
+
   .home-searchContainer {
-    height: 600px;
+    height: 500px;
+  }
+
+  .home-searchBox h3 {
+    font-size: 20px;
   }
 }
