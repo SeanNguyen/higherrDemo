@@ -1,6 +1,7 @@
 'use strict';
 
-function NavbarController($location) {
+function NavbarController($location, $rootScope) {
+  var self = this;
   this.isActive = function(tabIndex) {
     var url = $location.url();
     switch(tabIndex) {
@@ -29,7 +30,11 @@ function NavbarController($location) {
   this.toggleCollapsedMenu = function() {
     this.collapsedMenuVisibility = !this.collapsedMenuVisibility;
   }
+
+  $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams, options){ 
+    self.toggleCollapsedMenu();
+  })
 }
 
 angular.module('app')
-  .controller('NavbarController', ['$location', NavbarController]);
+  .controller('NavbarController', ['$location', '$rootScope', NavbarController]);
