@@ -16,14 +16,18 @@ angular.module('app', [
     $locationProvider.html5Mode(true);
 
     // Extend the red theme with a few different colors
-    var theme = $mdThemingProvider.extendPalette('red', {
+    var appTheme = $mdThemingProvider.extendPalette('red', {
       '500': '046B8B',
       'contrastDefaultColor': 'light',    // whether, by default, text (contrast)
     });
     // Register the new color palette map with the name <code>neonRed</code>
-    $mdThemingProvider.definePalette('theme', theme);
+    $mdThemingProvider.definePalette('appTheme', appTheme);
     // Use that theme for the primary intentions
     $mdThemingProvider.theme('default')
-      .primaryPalette('theme')
+      .primaryPalette('appTheme')
 
+    // Configure a dark theme with primary foreground yellow
+    $mdThemingProvider.theme('dark', 'default')
+      .primaryPalette('appTheme')
+      .dark();
   });

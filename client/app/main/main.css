@@ -1,6 +1,7 @@
 .home-searchContainer {
   position: relative;
   height: 600px;
+
   background-image: url("../../assets/images/search-background.jpg");
   background-size: cover;
 }
@@ -8,7 +9,11 @@
 .home-searchBox {
   min-width: 600px;
   padding: 20px;
-  background-color: rgba(240, 240, 240, 0.9);
+  background-color: rgba(240, 240, 240, 0.95);
+}
+
+.home-searchBox h1 {
+  font-weight: 300;
 }
 
 .home-searchBox .selectedTab {
@@ -26,7 +31,34 @@ md-autocomplete[md-floating-label] md-input-container {
 
 @media (max-width: 600px) {
   .home-searchBox {
-    min-width: 100%;
+    min-width: 500px;
+  }
+
+  .home-searchBox a.md-button {
+    padding: 0 5px 0 5px;
+    margin: 7px 0px 7px 0px;
+    min-width: 0;
+    font-size: 13px;
+  }
+
+  .home-searchContainer {
+    height: 500px;
+  }
+
+  .home-searchBox h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-searchBox {
+    min-width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-searchBox {
+    min-width: 300px;
   }
 
   .home-searchBox a.md-button {
@@ -34,13 +66,5 @@ md-autocomplete[md-floating-label] md-input-container {
     margin: 6px 0px 6px 0px;
     min-width: 0;
     font-size: 12px;
-  }
-
-  .home-searchContainer {
-    height: 500px;
-  }
-
-  .home-searchBox h3 {
-    font-size: 20px;
   }
 }

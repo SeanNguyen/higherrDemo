@@ -1,18 +1,18 @@
 <md-whiteframe class="md-whiteframe-4dp home-searchBox" layout="column" layout-align="center center">
-  <h3 class="text-center">Find Universities You'd Love</h3>
+  <h1 class="text-center">Find Universities You'd Love</h1>
   <div layout layout-align="center center">
     <div layout layout-align="center center" ng-class="{ selectedTab: main.currentTab === 0 }">
       <md-button href="/universities" ng-disabled="nav.isActive(0)">Universities</md-button>
     </div>
-    .
+    <span hide-gt-xs>.</span>
     <div layout layout-align="center center" ng-class="{ selectedTab: main.currentTab === 1 }">
       <md-button href="/applications" ng-disabled="main.currentTab === 1">Applications</md-button>
     </div>
-    .
+    <span hide-gt-xs>.</span>
     <div layout layout-align="center center" ng-class="{ selectedTab: main.currentTab === 2 }">
       <md-button href="/lifeandprograms" ng-disabled="main.currentTab === 2">life@</md-button>
     </div>
-    .
+    <span hide-gt-xs>.</span>
     <div layout layout-align="center center" ng-class="{ selectedTab: main.currentTab === 3 }">
       <md-button href="/schoolarships" ng-disabled="main.currentTab === 3">Scholarships</md-button>
     </div>
