@@ -1,6 +1,8 @@
 <div class="university" ng-init="uni.init()">
   <div ng-include='"app/university/headerInfo.html"'></div>
   <div layout>
-    <div ng-include='"app/university/review.html"' flex='80'></div>
+    <!-- content -->
+    <div ui-view=""></div>
+    <!-- sidebar -->
   </div>
 </div>
