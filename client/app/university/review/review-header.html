@@ -1,0 +1,48 @@
+<div ng-init='uni.initCharts()'>
+  <div layout layout-align="space-between center">
+    <h2 class="md-title">National University of Singapore Reviews</h2>
+    <div>Updated January 28, 2016</div>
+  </div>
+  <div layout layout-align="space-between center">
+    <div layout layout-align="center center">
+      <label>78 Reviews Filtered by</label>
+      <md-chips>
+        <md-chip>Any Location</md-chip>
+        <md-chip>Any Major</md-chip>
+        <md-chip>Any Status</md-chip>
+      </md-chips>
+    </div>
+    <div>
+      <md-button href='#'>Filters</md-button>
+    </div>
+  </div>
+  <div layout layout-align="center center">
+    <div>
+      <h4>Life@</h4>
+      <div layout layout="center center">
+        <div>
+          <h1>3.2</h1>
+          <h3>Average</h3>
+        </div>
+        <div>
+          <div><i class="fa fa-square-o"></i> Excellent</div>
+          <div><i class="fa fa-square-o"></i></div>
+          <div><i class="fa fa-square"></i> Average</div>
+          <div><i class="fa fa-square"></i></div>
+          <div><i class="fa fa-square"></i> Poor</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>Top Opportunities</h4>
+      <div layout layout="center center">
+        <canvas id="opportunitiesChart" width="100" height="100"></canvas>
+        <div>
+          <div><i class="fa fa-square"></i> Internships</div>
+          <div><i class="fa fa-square"></i> Exchange</div>
+          <div><i class="fa fa-square"></i> CCAs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

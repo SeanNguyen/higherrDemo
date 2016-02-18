@@ -29,6 +29,12 @@
   font-style: normal;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 /**
  * App-wide Styles
  */
@@ -54,4 +60,30 @@
   text-decoration:none;
   border: none;
   outline: none;
+}
+
+.h100 {
+  height: 100px;
+}
+.h200 {
+  height: 200px;
+}
+.h300 {
+  height: 300px;
+}
+.h400 {
+  height: 400px;
+}
+.h500 {
+  height: 500px;
+}
+.h600 {
+  height: 600px;
+}
+.h700 {
+  height: 700px;
+}
+
+.background-white {
+  background-color: #FCFCFC;
 }

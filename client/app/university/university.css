@@ -1,0 +1,14 @@
+.university {
+  background-color: #DDD;
+}
+
+.university>div {
+  margin: 10px;
+}
+
+.university .coverPhoto {
+  height: 300px;
+  background-image: url("../../assets/images/cover-nus.jpg");
+  background-size: cover;
+  background-position: center;
+}
