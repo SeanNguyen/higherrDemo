@@ -87,7 +87,9 @@
 .w100 {
   width: 100px;
 }
-
+.w150 {
+  width: 150px;
+}
 .w200 {
   width: 200px;
 }
@@ -110,6 +112,19 @@
 
 .w700 {
   width: 700px;
+}
+
+.m5 {
+  margin: 5px;
+}
+.m10 {
+  margin: 5px;
+}
+.m15 {
+  margin: 5px;
+}
+.m20 {
+  margin: 5px;
 }
 
 .background-white {

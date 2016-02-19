@@ -7,7 +7,8 @@ angular.module('app', [
   'ngSanitize',
   'ui.router',
   'ui.bootstrap',
-  'ngMaterial'
+  'ngMaterial',
+  'chart.js'
 ])
   .config(function($urlRouterProvider, $locationProvider, $mdThemingProvider) {
     $urlRouterProvider
@@ -30,8 +31,4 @@ angular.module('app', [
     $mdThemingProvider.theme('dark', 'default')
       .primaryPalette('appTheme')
       .dark();
-
-    Chart.defaults.global = {
-      showTooltips: false
-    };
   });
