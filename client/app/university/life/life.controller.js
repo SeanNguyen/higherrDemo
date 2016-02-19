@@ -29,7 +29,7 @@ function UniversityLifeController($stateParams, $timeout) {
               ];
     var options = {};
     var ctx = $("#opportunitiesChart").get(0).getContext("2d");
-    var opportunitiesChart = new Chart(ctx).Pie(data,options);
+    var opportunitiesChart = new Chart(ctx).Doughnut(data,options);
   }
 }
 })();

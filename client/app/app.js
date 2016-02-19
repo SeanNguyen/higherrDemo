@@ -30,4 +30,8 @@ angular.module('app', [
     $mdThemingProvider.theme('dark', 'default')
       .primaryPalette('appTheme')
       .dark();
+
+    Chart.defaults.global = {
+      showTooltips: false
+    };
   });
