@@ -77,7 +77,8 @@
 }
 
 .md-whiteframe-1dp, .md-whiteframe-2dp, .md-whiteframe-3dp, .md-whiteframe-4dp {
- background-color: rgb(255, 255, 255); 
+ background-color: rgb(255, 255, 255);
+ border-radius: 3px;
  padding: 20px;
  margin: 10px;
 }
