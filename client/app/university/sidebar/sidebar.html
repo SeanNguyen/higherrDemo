@@ -1,0 +1,36 @@
+<div class="w300">
+  <div md-whiteframe=2>
+    <div class="form-group">
+      <label>Add a Review</label>
+      <input type="text" class="form-control">
+    </div>
+  </div>
+
+  <div md-whiteframe=2>
+    <h4>Similar Universities</h4>
+    <div ng-repeat='uni in uni.universities' layout class="mt10">
+      <div class="w50 h50 m5" ng-style="{background: 'url(' + uni.photoUrl + ') 50% 50% no-repeat', 'background-size': 'cover'}"></div>
+      <div>
+        <a href="#">{{uni.name}}</a>
+        <bar-rating rating-init="{{uni.rating}}" rating-readonly=false rating-size='md'></bar-rating>
+      </div>
+    </div>
+    <div layout layout-align="end end">
+      <a href="#">See All <i class="fa fa-caret-right m5"></i></a>
+    </div>
+  </div>
+
+  <div md-whiteframe=2>
+    <h4>Ranking Updates</h4>
+    <p class="mt20">Nationales un compassion au boulevards renferment decharnees primeveres de. As prisonnier patiemment du la instrument au. La emmener il epaules ah horreur cartons laideur dernier.</p>
+    <p class="mt20">Palais voulut croyez pendus choses tempes tot des. Parterre se bravoure ah kolbacks mourants arrivons retablir. Somme avons on je roidi temps heure large. Accable fit doubles violent premier comment chasses ans. Six ameliorer son vit jeu viendrait massacrer.</p>
+    <p class="mt20">Quoi je il coup pied la voix un. Et et gare me jeta pour puis boue. Diable moment et police le grande genoux tu. </p>
+  </div>
+
+  <div md-whiteframe=2>
+    <h4>Latest News</h4>
+    <p class="mt20">Drape sacre leurs on echos qu leurs trois. Un se troupeau veterans contient victoire je criaient amoureux. Certitude une incapable apprendre des abondance citadelle direction.</p>
+    <p class="mt20">Nationales un compassion au boulevards renferment decharnees primeveres de. As prisonnier patiemment du la instrument au. </p>
+    <p class="mt20">La emmener il epaules ah horreur cartons laideur dernier. Enfin fumee des faire moins mur ornee porta. Construit possedera viendrait superieur fabriquer les fut accoudees. Frisottent on comprendre patiemment crispation prisonnier va se. On ce sentait soldats donjons as pu souleve. Rire donc hors une ici loin tout chez. </p>
+  </div>
+</div>

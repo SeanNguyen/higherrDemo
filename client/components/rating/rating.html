@@ -1,8 +1,10 @@
-<select ng-attr-id="{{rating.id}}">
-  <option value=""></option>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-</select>
+<div ng-class='{ small: rating.size === "sm", medium: rating.size === "md", large: rating.size === "lg"}' ng-cloak>
+  <select ng-attr-id="{{rating.id}}">
+    <option value=""></option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+</div>

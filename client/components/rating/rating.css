@@ -1,0 +1,53 @@
+.small .br-theme-bars-horizontal .br-widget {
+  width: 5px;
+}
+.small .br-theme-bars-horizontal .br-widget a {
+  width: 5px;
+  height: 5px;
+}
+.small .br-theme-bars-horizontal .br-widget .br-current-rating {
+  width: 5px;
+  font-size: 5px;
+}
+.small .br-theme-fontawesome-stars .br-widget {
+  height: 10px;
+}
+.small .br-theme-fontawesome-stars .br-widget a {
+  font: normal normal normal 10px/1 FontAwesome;
+}
+
+.medium .br-theme-bars-horizontal .br-widget {
+  width: 10px;
+}
+.medium .br-theme-bars-horizontal .br-widget a {
+  width: 10px;
+  height: 10px;
+}
+.medium .br-theme-bars-horizontal .br-widget .br-current-rating {
+  width: 10px;
+  font-size: 10px;
+}
+.medium .br-theme-fontawesome-stars .br-widget {
+  height: 20px;
+}
+.medium .br-theme-fontawesome-stars .br-widget a {
+  font: normal normal normal 20px/1 FontAwesome;
+}
+
+.large .br-theme-bars-horizontal .br-widget {
+  width: 20px;
+}
+.large .br-theme-bars-horizontal .br-widget a {
+  width: 20px;
+  height: 20px;
+}
+.large .br-theme-bars-horizontal .br-widget .br-current-rating {
+  width: 20px;
+  font-size: 20px;
+}
+.large .br-theme-fontawesome-stars .br-widget {
+  height: 30px;
+}
+.large .br-theme-fontawesome-stars .br-widget a {
+  font: normal normal normal 30px/1 FontAwesome;
+}

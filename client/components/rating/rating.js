@@ -9,7 +9,8 @@
       scope: {
         ratingReadonly: '@',
         ratingInit: '@',
-        ratingType: '@'
+        ratingType: '@',
+        ratingSize: '@'
       },
       templateUrl: 'components/rating/rating.html',
       controller: ['$scope', '$rootScope', '$timeout', RatingController],
@@ -19,6 +20,7 @@
 
   function RatingController($scope, $rootScope, $timeout) {
     var self = this;
+    this.size = $scope.ratingSize;
     var theme = 'fontawesome-stars';
     var reverse = false;
     switch($scope.ratingType) {
