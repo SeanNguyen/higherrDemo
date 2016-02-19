@@ -12,12 +12,13 @@
         ratingType: '@'
       },
       templateUrl: 'components/rating/rating.html',
-      controller: ['$scope', RatingController],
+      controller: ['$scope', '$rootScope', '$timeout', RatingController],
       controllerAs: 'rating'
     }
   });
 
-  function RatingController($scope) {
+  function RatingController($scope, $rootScope, $timeout) {
+    var self = this;
     var theme = 'fontawesome-stars';
     var reverse = false;
     switch($scope.ratingType) {
@@ -29,13 +30,22 @@
         reverse = true;
         break;
     }
-    $('#example').barrating({
-      theme: theme,
-      initialRating: $scope.ratingInit,
-      readonly: $scope.ratingReadonly,
-      reverse: reverse,
-      showSelectedRating: false
-    });
-    $('#example').barrating('show');
+
+    if(!$rootScope.ratingBarCount || $rootScope.ratingBarCount === 0)
+      $rootScope.ratingBarCount = 1;
+    else
+      $rootScope.ratingBarCount++;
+    this.id = 'ratingBar-' + $rootScope.ratingBarCount;
+
+    $timeout(function() {
+      $('#' + self.id).barrating({
+        theme: theme,
+        initialRating: $scope.ratingInit,
+        readonly: $scope.ratingReadonly,
+        reverse: reverse,
+        showSelectedRating: false
+      });
+      $('#' + self.id).barrating('show');  
+    }, true)
   }
 })();

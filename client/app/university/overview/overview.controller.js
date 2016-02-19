@@ -11,9 +11,6 @@ function UniversityOverviewController($stateParams, $timeout) {
                 { url: '/assets/images/nus-3.jpg'},
                 { url: '/assets/images/nus-4.jpg'},
                 { url: '/assets/images/nus-5.jpg'}];
-  this.input = {
-    review: ''
-  };
 }
 
 })();

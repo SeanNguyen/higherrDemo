@@ -6,11 +6,7 @@
   <div layout layout-align='center center'>
     <h1>4.0</h1>
     <div layout layout-align='space-between center' class="w200">
-      <i class="fa fa-star fa-2x"></i>
-      <i class="fa fa-star fa-2x"></i>
-      <i class="fa fa-star fa-2x"></i>
-      <i class="fa fa-star fa-2x"></i>
-      <i class="fa fa-star-o fa-2x"></i>
+      <bar-rating rating-type="stars" rating-readonly='true' rating-init=4></bar-rating>
     </div>
   </div>
   <div layout layout-align='center start'>
@@ -43,12 +39,13 @@
           <h1>3.2</h1>
           <h3>Average</h3>
         </div>
-        <div>
-          <div><i class="fa fa-square-o"></i> Excellent</div>
-          <div><i class="fa fa-square-o"></i></div>
-          <div><i class="fa fa-square"></i> Average</div>
-          <div><i class="fa fa-square"></i></div>
-          <div><i class="fa fa-square"></i> Poor</div>
+        <div layout>
+          <bar-rating rating-type="vertical" rating-readonly='true' rating-init=3></bar-rating>
+          <div layout="column">
+            <div>Excellent</div>
+            <div>Average</div>
+            <div>Poor</div>
+          </div>
         </div>
       </div>
     </div>
