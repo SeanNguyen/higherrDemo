@@ -8,10 +8,10 @@
     </div>
     <div layout layout-align='space-between center'>
       <div layout>
-        <md-button>Overview</md-button>
-        <md-button>Reviews</md-button>
-        <md-button>Life@ and Programs</md-button>
-        <md-button>Applications</md-button>
+        <md-button ng-class='{ "md-primary": uni.isAtState("overview") }' href='university/{{uni.id}}/overview'>Overview</md-button>
+        <md-button ng-class='{ "md-primary": uni.isAtState("reviews") }' href='university/{{uni.id}}/reviews'>Reviews</md-button>
+        <md-button ng-class='{ "md-primary": uni.isAtState("life") }' href='university/{{uni.id}}/life'>Life@ and Programs</md-button>
+        <md-button ng-class='{ "md-primary": uni.isAtState("applications") }' href='university/{{uni.id}}/applications'>Applications</md-button>
         <md-button>more</md-button>
       </div>
       <div layout>
