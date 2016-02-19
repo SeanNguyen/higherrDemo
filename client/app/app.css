@@ -62,8 +62,15 @@
   outline: none;
 }
 
+html, body {
+  background-color: rgb(230, 230, 230);
+}
+
 .h100 {
   height: 100px;
+}
+.h150 {
+  height: 150px;
 }
 .h200 {
   height: 200px;
@@ -118,13 +125,25 @@
   margin: 5px;
 }
 .m10 {
-  margin: 5px;
+  margin: 10px;
 }
 .m15 {
-  margin: 5px;
+  margin: 15px;
 }
 .m20 {
-  margin: 5px;
+  margin: 20px;
+}
+.mt5 {
+  margin-top: 5px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
 }
 
 .background-white {
@@ -140,5 +159,5 @@
 }
 
 .md-whiteframe-1dp, .md-whiteframe-2dp, .md-whiteframe-3dp, .md-whiteframe-4dp {
- background-color: #FCFCFC; 
+ background-color: rgb(250, 250, 250); 
 }

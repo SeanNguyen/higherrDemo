@@ -1,9 +1,9 @@
 .university {
-  background-color: #DDD;
+
 }
 
 .university>div {
-  padding: 10px;
+  max-width: 1200px;
 }
 
 .university .coverPhoto {
@@ -11,4 +11,10 @@
   background-image: url("../../assets/images/cover-nus.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.logo-nus {
+   background: url(/assets/images/logo-nus.jpg) 50% 50% no-repeat;
+   background-size: cover;
+   border: 2px solid #000;
 }
