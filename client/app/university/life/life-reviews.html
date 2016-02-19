@@ -1,0 +1,45 @@
+<div>
+  <div layout layout-align="space-between center">
+    <h3>98 Reviews</h3>
+    <div>
+      Sort: Popular | <a href="#">Rating</a> | <a href="#">Date</a>
+    </div>
+  </div>
+  <div ng-repeat="review in uniLife.pages[uniLife.currentPage]">
+    <span class="text-muted m10">{{review.date}}</span>
+    <div layout>
+      <div class="logo-nus m10" style="width: 70px; height: 70px;"></div>
+      <div flex>
+        <a href="#"><h4>{{review.title}}</h4></a>
+        <div class="text-muted">{{review.student.status}} - Class of {{review.student.time}}</div>
+        <br>
+        <div layout layout-wrap layout-align="space-around center">
+          <div layout layout-align="center center" class="mr10 ml10">
+            <div class="bp mr10" style="width: 15px; height: 15px; border-radius: 3px;"></div>Excellent - Life@
+          </div>
+          <div layout layout-align="center center" class="mr10 ml10">
+            <div class="bp mr10" style="width: 15px; height: 15px; border-radius: 3px;"></div>Excellent - Life@
+          </div>
+          <div layout layout-align="center center" class="mr10 ml10">
+            <div class="bp mr10" style="width: 15px; height: 15px; border-radius: 3px;"></div>Excellent - Life@
+          </div>
+        </div>
+        <br>
+        <label>Pros</label>
+        <p>{{review.pros}}</p>
+        <label>Cons</label>
+        <p>{{review.cons}}</p>
+        <label>Advice to Management</label>
+        <p>{{review.advices}}</p>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div>
+    <span class="text-muted">Showing {{uniLife.pages[uniLife.currentPage].length}} of {{uniLife.totalItems}} Reviews</span>
+    <div layout layout-align="space-between center">
+      <md-button class="md-raised">Reset Filters</md-button>
+      <pagination boundary-links="false" total-items="uniLife.totalItems" ng-model="uniLife.currentPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" items-per-page='4'></pagination>
+    </div>
+  </div>
+</div>

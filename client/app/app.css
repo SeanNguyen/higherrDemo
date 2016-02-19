@@ -35,6 +35,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  color: rgb(100, 100, 100);
+}
+
 /**
  * App-wide Styles
  */
@@ -74,6 +78,18 @@
 
 .background-black {
   background-color: #333;
+}
+
+.bp {
+ background-color: rgb(124, 178, 40); 
+}
+
+.bw {
+ background-color: rgb(178, 65, 39); 
+}
+
+.bn {
+ background-color: rgb(253, 231, 0); 
 }
 
 .md-whiteframe-1dp, .md-whiteframe-2dp, .md-whiteframe-3dp, .md-whiteframe-4dp {
@@ -167,6 +183,9 @@ html, body {
   margin: 20px;
 }
 
+.mt0 {
+  margin-top: 0;
+}
 .mt5 {
   margin-top: 5px;
 }
@@ -178,6 +197,54 @@ html, body {
 }
 .mt20 {
   margin-top: 20px;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+.mb5 {
+  margin-bottom: 5px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb15 {
+  margin-bottom: 15px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.ml0 {
+  margin-left: 0;
+}
+.ml5 {
+  margin-left: 5px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml15 {
+  margin-left: 15px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+
+.mr0 {
+  margin-right: 0;
+}
+.mr5 {
+  margin-right: 5px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr15 {
+  margin-right: 15px;
+}
+.mr20 {
+  margin-right: 20px;
 }
 
 /*PADDING*/

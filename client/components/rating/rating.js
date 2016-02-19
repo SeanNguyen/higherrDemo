@@ -21,7 +21,7 @@
   function RatingController($scope, $rootScope, $timeout) {
     var self = this;
     this.size = $scope.ratingSize;
-    var theme = 'fontawesome-stars';
+    var theme = 'bars-1to10';
     var reverse = false;
     switch($scope.ratingType) {
       case 'stars':

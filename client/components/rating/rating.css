@@ -51,3 +51,56 @@
 .large .br-theme-fontawesome-stars .br-widget a {
   font: normal normal normal 30px/1 FontAwesome;
 }
+
+/*1 TO 10*/
+
+.small .br-theme-bars-1to10 .br-widget {
+  height: 20px;
+}
+.small .br-theme-bars-1to10 .br-widget a {
+  width: 5px;
+  height: 15px;
+}
+.small .br-theme-bars-1to10 .br-widget .br-current-rating {
+  font-size: 10px;
+  padding: 0 5px 0 5px;
+}
+@media print {
+  .small .br-theme-bars-1to10 .br-widget a {
+    height: 20px;
+  }
+}
+
+.medium .br-theme-bars-1to10 .br-widget {
+  height: 30px;
+}
+.medium .br-theme-bars-1to10 .br-widget a {
+  width: 6px;
+  height: 20px;
+}
+.medium .br-theme-bars-1to10 .br-widget .br-current-rating {
+  font-size: 10px;
+  padding: 0 10px 0 10px;
+}
+@media print {
+  .medium .br-theme-bars-1to10 .br-widget a {
+    height: 38px;
+  }
+}
+
+.large .br-theme-bars-1to10 .br-widget {
+  height: 50px;
+}
+.large .br-theme-bars-1to10 .br-widget a {
+  width: 12px;
+  height: 28px;
+}
+.large .br-theme-bars-1to10 .br-widget .br-current-rating {
+  font-size: 20px;
+  padding: 0 20px 0 20px;
+}
+@media print {
+  .large .br-theme-bars-1to10 .br-widget a {
+    height: 38px;
+  }
+}

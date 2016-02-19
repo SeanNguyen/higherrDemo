@@ -1,22 +1,18 @@
 <div ng-init='uniLife.init()'>
   <div layout layout-align="space-between center">
-    <h2 class="md-title">National University of Singapore Reviews</h2>
+    <h3 class="md-title">National University of Singapore Reviews</h3>
     <div>Updated January 28, 2016</div>
   </div>
   <div layout layout-align="space-between center">
-    <div layout layout-align="center center">
-      <label>78 Reviews Filtered by</label>
-      <md-chips>
-        <md-chip>Any Location</md-chip>
-        <md-chip>Any Major</md-chip>
-        <md-chip>Any Status</md-chip>
-      </md-chips>
+    <label>78 Reviews Filtered by</label>
+    <div class="chips">
+      <label>Any Location</label>
+      <label>Any Major</label>
+      <label>Any Status</label>
     </div>
-    <div>
-      <md-button href='#'>Filters</md-button>
-    </div>
+    <md-button class="md-primary">Filters<i class="fa fa-caret-right m5"></i></md-button>
   </div>
-  <div layout layout-align="center center">
+  <div layout layout-align="space-around center">
     <div>
       <h4>Life@</h4>
       <div layout layout="center center">
@@ -24,12 +20,13 @@
           <h1>3.2</h1>
           <h3>Average</h3>
         </div>
-        <div>
-          <div><i class="fa fa-square-o"></i> Excellent</div>
-          <div><i class="fa fa-square-o"></i></div>
-          <div><i class="fa fa-square"></i> Average</div>
-          <div><i class="fa fa-square"></i></div>
-          <div><i class="fa fa-square"></i> Poor</div>
+        <div layout>
+          <bar-rating rating-init=3 rating-readonly='true' rating-type="vertical"></bar-rating>
+          <div layout="column" layout-align="space-around center">
+            <div>Excellent</div>
+            <div>Average</div>
+            <div>Poor</div>
+          </div>
         </div>
       </div>
     </div>
@@ -43,6 +40,14 @@
           <div><i class="fa fa-square"></i> CCAs</div>
         </div>
       </div>
+    </div>
+    <div>
+      <h4>Expenses</h4>
+      <div layout layout="center center">
+        <bar-rating rating-init=3 rating-readonly='true' rating-size='md'></bar-rating>
+        <h3 class="m10 mt0 mb0">$500</h3>
+      </div>
+      <label class="text-right">Monthly - Median</label>
     </div>
   </div>
 </div>
