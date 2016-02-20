@@ -85,6 +85,12 @@ strong {
 .cp {
   color: rgb(4,107,139); 
 }
+.cg {
+  color: rgb(200, 200, 200); 
+}
+.cw {
+  color: rgb(255,50,50); 
+}
 
 /*BACKGROUND*/
 

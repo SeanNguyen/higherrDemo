@@ -12,7 +12,7 @@
       <div class="logo-nus m10" style="width: 70px; height: 70px;" hide-xs></div>
       <div flex>
         <a href="#"><h4>{{review.title}}</h4></a>
-        <div layout="column" layout-gt-sm='row'>
+        <div layout="column" layout-gt-sm=' row' ng-show='reviews.type === "review"'>
           <div class='mr20' layout>
             <bar-rating rating-init=3 rating-type='stars' rating-size='md' rating-readonly='true'></bar-rating>
             <md-button class="md-icon-button" aria-label="Detail" style='position: relative; bottom: 10px; right: 10px;'
@@ -22,6 +22,7 @@
           </div>
           <div class="text-muted">{{review.student.status}} - Class of {{review.student.time}}</div>
         </div>
+        <div class="text-muted mb10" ng-show='reviews.type !== "review"'>{{review.student.status}} - Class of {{review.student.time}}</div>
         <div layout layout-wrap layout-align="space-between center">
           <div layout layout-align="center center" class="mr10 ml10">
             <div class="bp mr10" style="width: 15px; height: 15px; border-radius: 3px;"></div>
