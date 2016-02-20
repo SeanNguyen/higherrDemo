@@ -79,6 +79,9 @@ body {
 }
 
 /*COLORS*/
+strong {
+  color: rgb(4,107,139); 
+}
 .cp {
   color: rgb(4,107,139); 
 }

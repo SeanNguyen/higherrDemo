@@ -6,12 +6,12 @@
   display: block;
   width: 15px;
   height: 15px;
-  background-color: #fbedd9;
+  background-color: rgba(50, 83, 93, 0.4);
   margin: 1px;
 }
 .br-theme-bars-horizontal .br-widget a.br-active,
 .br-theme-bars-horizontal .br-widget a.br-selected {
-  background-color: #edb867;
+  background-color: #046B8B;
 }
 .br-theme-bars-horizontal .br-widget .br-current-rating {
   width: 15px;
@@ -19,14 +19,14 @@
   font-weight: 600;
   line-height: 2;
   text-align: center;
-  color: #edb867;
+  color: #046B8B;
 }
 .br-theme-bars-horizontal .br-readonly a.br-active,
 .br-theme-bars-horizontal .br-readonly a.br-selected {
-  background-color: #f2cd95;
+  background-color: #046B8B;
 }
 .br-theme-bars-horizontal .br-readonly .br-current-rating {
-  color: #f2cd95;
+  color: #046B8B;
 }
 @media print {
   .br-theme-bars-horizontal .br-widget a {

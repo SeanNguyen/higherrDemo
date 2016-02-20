@@ -3,25 +3,21 @@
   <div layout layout-align='space-around start'>
     <div>
       <label>Undergraduate Score</label>
-      <div layout layout-align='center center' class="h100">
-        <div layout layout="center center">
-          <bar-rating rating-init=3 rating-readonly='true' rating-size='lg'></bar-rating>
-          <div>
-            <h3 class="m10 mt0 mb0">500</h3>
-            <h5 class="text-center">SAT score - Median</h5>
-          </div>
+      <div layout="column" layout-align="center start" layout-gt-xs='row' layout-align-gt-xs="start center">
+        <bar-rating rating-init='2' rating-readonly='true' rating-size="lg"></bar-rating>
+        <div class="m10">
+          <div class="md-display-1 cp">400</div>
+          <label class="text-muted">SAT score - Median</label>
         </div>
       </div>
     </div>
     <div>
       <label>Graduate Score</label>
-      <div layout layout-align='center center' class="h100">
-        <div layout layout="center center">
-          <bar-rating rating-init=3 rating-readonly='true' rating-size='lg'></bar-rating>
-          <div>
-            <h3 class="m10 mt0 mb0">500</h3>
-            <h5 class="text-center">GRE score - Median</h5>
-          </div>
+      <div layout="column" layout-align="center start" layout-gt-xs='row' layout-align-gt-xs="start center">
+        <bar-rating rating-init='4' rating-readonly='true' rating-size="lg"></bar-rating>
+        <div class="m10">
+          <div class="md-display-1 cp">600</div>
+          <label class="text-muted">GRE score - Median</label>
         </div>
       </div>
     </div>

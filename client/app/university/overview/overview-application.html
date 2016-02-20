@@ -3,62 +3,9 @@
     <h3>Applications</h3>
     <a href="/university/1/application"></a>
   </div>
-  <div layout layout-align="space-between" layout-wrap>
-    <div flex=50 flex-gt-xs=25>
-      <label>Applicants</label>
-      <div class="h100" layout layout-align="start center">
-        <label class="md-display-1 cp">50,000</label>
-      </div>
-    </div>
-    <div flex=50 flex-gt-xs=25>
-      <label>Acceptance</label>
-      <div layout layout-align="start center" class="h100">
-        <graph-component-pie></graph-component-pie>
-        <label class="md-display-1 m10 cp">20%</label>
-      </div>
-    </div>
-    <div flex=50 flex-gt-xs=25>
-      <label>Requirements</label>
-      <div layout layout-align="start center" class="h100">
-        <bar-rating rating-init='3' rating-readonly='true'></bar-rating>
-        <div class="text-center m10">
-          <div class="md-display-1 cp">3.2</div>
-          <label class="text-muted">Average</label>
-        </div>
-      </div>
-    </div>
-    <div flex=50 flex-gt-xs=25>
-      <label>Essay and Interview</label>
-      <div layout layout-align="start center" class="h100">
-        <bar-rating rating-init='3' rating-readonly='true'></bar-rating>
-        <div class="text-center m10">
-          <div class="md-display-1 cp">3.2</div>
-          <label class="text-muted">Average</label>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div ng-include='"app/university/components/applicationRating.html"'></div>
   <br>
-  <div>
-    <h4 class="md-headline">Deadline</h4>
-    <div layout layout-wrap layout-align="space-around center">
-      <div flex=100 flex-gt-xs=33>
-        <h4 class="md-title cp">Undergraduate</h4>
-        <p>Semester 1: 02 Feb</p>
-        <p>Semester 2: 02 Aug</p>
-      </div>
-      <div flex=100 flex-gt-xs=33>
-        <h4 class="md-title cp">Graduate</h4>
-        <p>Semester 1: 02 Feb</p>
-        <p>Semester 2: 02 Aug</p>
-      </div>
-      <div flex=100 flex-gt-xs=33>
-        <h4 class="md-title cp">MBA</h4>
-        <p>Semester 1: 02 Feb</p>
-        <p>Semester 2: 02 Aug</p>
-      </div>
-    </div>
-  </div>
+  <div ng-include='"app/university/components/applicationDeadline.html"'></div>
   <hr>
   <div>
     <h3 class="md-headline">Review Title</h3>
