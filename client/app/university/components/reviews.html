@@ -1,14 +1,15 @@
 <div>
   <div layout layout-align="space-between center">
-    <h3>98 Reviews</h3>
+    <h3 class="md-heading">11 Reviews</h3>
     <div>
       Sort: Popular | <a href="#">Rating</a> | <a href="#">Date</a>
     </div>
   </div>
   <div ng-repeat="review in uni.pages[uni.currentPage]">
-    <span class="text-muted m10">{{review.date}}</span>
+    <span class="text-muted m10" hide-xs>{{review.date}}</span>
+    <span class="text-muted mb10" hide-gt-xs>{{review.date}}</span>
     <div layout>
-      <div class="logo-nus m10" style="width: 70px; height: 70px;"></div>
+      <div class="logo-nus m10" style="width: 70px; height: 70px;" hide-xs></div>
       <div flex>
         <a href="#"><h4>{{review.title}}</h4></a>
         <div class="text-muted">{{review.student.status}} - Class of {{review.student.time}}</div>
