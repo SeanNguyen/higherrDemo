@@ -5,7 +5,7 @@
       Sort: Popular | <a href="#">Rating</a> | <a href="#">Date</a>
     </div>
   </div>
-  <div ng-repeat="review in uniLife.pages[uniLife.currentPage]">
+  <div ng-repeat="review in uni.pages[uni.currentPage]">
     <span class="text-muted m10">{{review.date}}</span>
     <div layout>
       <div class="logo-nus m10" style="width: 70px; height: 70px;"></div>
@@ -36,10 +36,10 @@
     <hr>
   </div>
   <div>
-    <span class="text-muted">Showing {{uniLife.pages[uniLife.currentPage].length}} of {{uniLife.totalItems}} Reviews</span>
+    <span class="text-muted">Showing {{uni.pages[uni.currentPage].length}} of {{uni.totalItems}} Reviews</span>
     <div layout layout-align="space-between center">
       <md-button class="md-raised">Reset Filters</md-button>
-      <pagination boundary-links="false" total-items="uniLife.totalItems" ng-model="uniLife.currentPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" items-per-page='4'></pagination>
+      <pagination boundary-links="false" total-items="uni.totalItems" ng-model="uni.currentPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" items-per-page='4'></pagination>
     </div>
   </div>
 </div>

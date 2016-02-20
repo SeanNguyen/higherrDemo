@@ -12,7 +12,7 @@
   });
 
   function OpinionDonutController() {
-    this.labels = ["Positive", "Neutral", "Negative"];
+    this.labels = ["", "", ""];
     this.data = [300, 500, 100];
   }
 })();
