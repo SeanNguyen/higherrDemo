@@ -2,16 +2,16 @@
   <div class="coverPhoto">
   </div>
   <div>
-    <div layout layout-align='start end' style="position: absolute; top: 200px;">
+    <div layout layout-align='start end' style="position:absolute;top:200px;right:0;left:0;" layout-xs="column" layout-align-xs='center center' class="p10">
       <div class="logo-nus h150 w150 mr20 ml20"></div>
-      <div class="md-headline">National University of Singapore</div>
+      <div class="md-headline text-center mt10">National University of Singapore</div>
     </div>
-    <br><br><br>
-    <div layout layout-align='space-between center' class="ml20">
-      <div layout>
+    <br><br><br><br hide-gt-xs><br hide-gt-xs><br hide-gt-xs>
+    <div layout="column" layout-gt-sm="row" layout-align='space-between center' class="ml10">
+      <div layout style="overflow: auto;">
         <md-button ng-class='{ "md-primary": uni.isAtState("overview") }' href='university/{{uni.id}}/overview'>Overview</md-button>
         <md-button ng-class='{ "md-primary": uni.isAtState("reviews") }' href='university/{{uni.id}}/reviews'>Reviews</md-button>
-        <md-button ng-class='{ "md-primary": uni.isAtState("life") }' href='university/{{uni.id}}/life'>Life@ and Programs</md-button>
+        <md-button ng-class='{ "md-primary": uni.isAtState("life") }' href='university/{{uni.id}}/life' style='flex:1 0 150px;'>Life@ and Programs</md-button>
         <md-button ng-class='{ "md-primary": uni.isAtState("applications") }' href='university/{{uni.id}}/applications'>Applications</md-button>
         <md-button>more</md-button>
       </div>

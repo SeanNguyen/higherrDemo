@@ -10,6 +10,11 @@ function UniversityOverviewController($stateParams, $timeout) {
                 { url: '/assets/images/nus-2.jpg'},
                 { url: '/assets/images/nus-3.jpg'},
                 { url: '/assets/images/nus-4.jpg'},
+                { url: '/assets/images/nus-5.jpg'},
+                { url: '/assets/images/nus-1.jpg'},
+                { url: '/assets/images/nus-2.jpg'},
+                { url: '/assets/images/nus-3.jpg'},
+                { url: '/assets/images/nus-4.jpg'},
                 { url: '/assets/images/nus-5.jpg'}];
 }
 

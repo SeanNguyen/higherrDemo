@@ -3,61 +3,57 @@
     <h3>Applications</h3>
     <a href="/university/1/application"></a>
   </div>
-  <div layout layout-align="space-between">
-    <div flex=25>
+  <div layout layout-align="space-between" layout-wrap>
+    <div flex=50 flex-gt-xs=25>
       <label>Applicants</label>
-      <h1>50,000</h1>
+      <div class="h100" layout layout-align="start center">
+        <label class="md-display-1 cp">50,000</label>
+      </div>
     </div>
-    <div flex=25>
-      <label>Applicants</label>
-      <div layout layout-align="start center">
+    <div flex=50 flex-gt-xs=25>
+      <label>Acceptance</label>
+      <div layout layout-align="start center" class="h100">
         <graph-component-pie></graph-component-pie>
-        <label>20%</label>
+        <label class="md-display-1 m10 cp">20%</label>
       </div>
     </div>
-    <div flex=25>
+    <div flex=50 flex-gt-xs=25>
       <label>Requirements</label>
-      <div layout layout-align="start center">
-        <div layout style='height: 30px;' layout-align="stretch center" flex=50>
-          <div flex=80 class="background-black"></div>
-          <div flex=20 class="background-gray"></div>
-        </div>
-        <div flex=50>
-          <h3>3.2</h3>
-          <label>Average</label>
+      <div layout layout-align="start center" class="h100">
+        <bar-rating rating-init='3' rating-readonly='true'></bar-rating>
+        <div class="text-center m10">
+          <div class="md-display-1 cp">3.2</div>
+          <label class="text-muted">Average</label>
         </div>
       </div>
     </div>
-    <div flex=25>
+    <div flex=50 flex-gt-xs=25>
       <label>Essay and Interview</label>
-      <div layout layout-align="start center">
-        <div layout style='height: 30px;' layout-align="stretch center" flex=50>
-          <div flex=80 class="background-black"></div>
-          <div flex=20 class="background-gray"></div>
-        </div>
-        <div flex=50>
-          <h3>3.2</h3>
-          <label>Average</label>
+      <div layout layout-align="start center" class="h100">
+        <bar-rating rating-init='3' rating-readonly='true'></bar-rating>
+        <div class="text-center m10">
+          <div class="md-display-1 cp">3.2</div>
+          <label class="text-muted">Average</label>
         </div>
       </div>
     </div>
   </div>
   <br>
   <div>
-    <h4>Deadline</h4>
-    <div layout>
-      <div flex=33>
-        <h4>Undergraduate</h4>
+    <h4 class="md-headline">Deadline</h4>
+    <div layout layout-wrap layout-align="space-around center">
+      <div flex=100 flex-gt-xs=33>
+        <h4 class="md-title cp">Undergraduate</h4>
         <p>Semester 1: 02 Feb</p>
         <p>Semester 2: 02 Aug</p>
       </div>
-      <div flex=33>
-        <h4>Graduate</h4>
+      <div flex=100 flex-gt-xs=33>
+        <h4 class="md-title cp">Graduate</h4>
         <p>Semester 1: 02 Feb</p>
         <p>Semester 2: 02 Aug</p>
       </div>
-      <div flex=33>
-        <h4>MBA</h4>
+      <div flex=100 flex-gt-xs=33>
+        <h4 class="md-title cp">MBA</h4>
         <p>Semester 1: 02 Feb</p>
         <p>Semester 2: 02 Aug</p>
       </div>
@@ -65,7 +61,7 @@
   </div>
   <hr>
   <div>
-    <h3>Review Title</h3>
+    <h3 class="md-headline">Review Title</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis accumsan lorem, ut molestie libero accumsan eu. Quisque porttitor mauris et risus dictum, bibendum hendrerit sapien ultricies. Nulla felis dolor, pellentesque a augue ac, volutpat varius augue. Curabitur lacinia nunc quis condimentum imperdiet. Proin dictum tincidunt neque id tincidunt. Nulla at nulla a felis eleifend fringilla. Etiam augue lorem, sollicitudin sit amet enim non, pharetra efficitur velit. Nunc malesuada nibh ut mauris iaculis, in pellentesque elit convallis. Aliquam pharetra elit nec fringilla mattis. Duis mi mi, placerat non neque vestibulum, placerat facilisis ipsum.</p>
   </div>
 </div>

@@ -1,12 +1,12 @@
 <div md-whiteframe="1">
   <div layout layout-align='space-between center'>
     <h3>NUS Photos</h3>
-    <a href="/university/1/review">See All <i class="fa fa-angle-right fa-lg m5"></i></a>
+    <a href="/university/1/review" class="mt20 mb10">See All <i class="fa fa-angle-right fa-lg m5"></i></a>
   </div>
-  <div layout layout-align='start center'>
-    <div ng-repeat='photo in uniOverview.photos' class="w150 h100 m5" ng-style="{background: 'url(' + photo.url + ') 50% 50% no-repeat', 'background-size': 'cover'}"></div>
+  <div layout layout-align='start center' style="overflow: hidden;">
+    <div ng-repeat='photo in uniOverview.photos' class="w150 h100 m5" ng-style="{background: 'url(' + photo.url + ') 50% 50% no-repeat', 'background-size': 'cover'}" style="flex: 0 0 150px;"></div>
   </div>
   <div layout layout-align="end center">
-    <md-button class='md-primary'><i class="fa fa-plus fa-lg m5"></i> Add Photo</md-button>
+    <md-button class='md-primary'><i class="fa fa-plus m5"></i> Add Photo</md-button>
   </div>
 </div>

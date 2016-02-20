@@ -4,44 +4,44 @@
     <a href="/university/1/review"></a>
   </div>
   <div layout layout-align='center center'>
-    <h1>4.0</h1>
+    <span class="md-display-1 m10 cp">4.0</span>
     <div layout layout-align='space-between center' class="w200">
       <bar-rating rating-type="stars" rating-readonly='true' rating-init=4></bar-rating>
     </div>
   </div>
-  <div layout layout-align='center start'>
-    <div>
-      <h4>Life@</h4>
-      <div layout layout-align='center center'>
+  <div layout layout-align='center start' layout-wrap>
+    <div flex=50 flex-gt-xs=33>
+      <label class="mt10 mb10">Life@</label>
+      <div layout layout-align='start center'>
         <graph-opinion-donut></graph-opinion-donut>
-        <div>
+        <div class="ml10">
           <div><i class="fa fa-square"></i> Positive</div>
           <div><i class="fa fa-square"></i> Neutral</div>
           <div><i class="fa fa-square"></i> Negative</div>
         </div>
       </div>
     </div>
-    <div>
-      <h4>Exposure &amp; Opportunities</h4>
-      <div layout layout-align='center center'>
+    <div flex=50 flex-gt-xs=33>
+      <label class="mt10 mb10">Exposure &amp; Opportunities</label>
+      <div layout layout-align='start center'>
         <graph-opinion-donut></graph-opinion-donut>
-        <div>
+        <div class="ml10">
           <div><i class="fa fa-square"></i> Internships</div>
           <div><i class="fa fa-square"></i> Exchange</div>
           <div><i class="fa fa-square"></i> CCAs</div>
         </div>
       </div>
     </div>
-    <div>
-      <h4>Career Opportunities</h4>
-      <div layout layout="center center">
-        <div>
-          <h1>3.2</h1>
-          <h3>Average</h3>
+    <div flex=100 flex-gt-xs=33>
+      <label class="mt10 mb10">Career Opportunities</label>
+      <div layout layout="start center">
+        <div class="text-center mr10 mt10">
+          <label class="md-display-1 cp">3.2</label>
+          <div class="text-muted md-body-2">Average</div>
         </div>
         <div layout>
           <bar-rating rating-type="vertical" rating-readonly='true' rating-init=3></bar-rating>
-          <div layout="column">
+          <div layout="column" layout-align='space-between start' class="ml10">
             <div>Excellent</div>
             <div>Average</div>
             <div>Poor</div>
@@ -52,7 +52,7 @@
   </div>
   <hr>
   <div>
-    <h3>Review Title</h3>
+    <h3 class="md-headline">Review Title</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis accumsan lorem, ut molestie libero accumsan eu. Quisque porttitor mauris et risus dictum, bibendum hendrerit sapien ultricies. Nulla felis dolor, pellentesque a augue ac, volutpat varius augue. Curabitur lacinia nunc quis condimentum imperdiet. Proin dictum tincidunt neque id tincidunt. Nulla at nulla a felis eleifend fringilla. Etiam augue lorem, sollicitudin sit amet enim non, pharetra efficitur velit. Nunc malesuada nibh ut mauris iaculis, in pellentesque elit convallis. Aliquam pharetra elit nec fringilla mattis. Duis mi mi, placerat non neque vestibulum, placerat facilisis ipsum.</p>
   </div>
 </div>
