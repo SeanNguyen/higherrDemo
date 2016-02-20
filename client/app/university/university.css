@@ -1,5 +1,9 @@
 .university {
+  position: relative;
+}
 
+.table-clean td {
+  border-top: none !important;
 }
 
 .university .coverPhoto {

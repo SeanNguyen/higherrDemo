@@ -1,9 +1,9 @@
 <div class="university container" ng-init="uni.init()">
   <div ng-include='"app/university/header/header.html"'></div>
-  <div layout>
+  <div layout="column" layout-gt-sm="row">
     <!-- content -->
     <div ui-view flex></div>
     <!-- sidebar -->
-    <div ng-include='"app/university/sidebar/sidebar.html"'></div>
+    <div ng-include='"app/university/sidebar/sidebar.html"' style="flex: 0 0 300px;"></div>
   </div>
 </div>

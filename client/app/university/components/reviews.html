@@ -13,15 +13,15 @@
         <a href="#"><h4>{{review.title}}</h4></a>
         <div class="text-muted">{{review.student.status}} - Class of {{review.student.time}}</div>
         <br>
-        <div layout layout-wrap layout-align="space-around center">
+        <div layout layout-wrap layout-align="space-between center">
           <div layout layout-align="center center" class="mr10 ml10">
-            <div class="bp mr10" style="width: 15px; height: 15px; border-radius: 3px;"></div>Excellent - Life@
+            <div class="bp mr10" style="width: 15px; height: 15px; border-radius: 3px;"></div>Positive - Life@
           </div>
           <div layout layout-align="center center" class="mr10 ml10">
-            <div class="bp mr10" style="width: 15px; height: 15px; border-radius: 3px;"></div>Excellent - Life@
+            <div class="bw mr10" style="width: 15px; height: 15px; border-radius: 3px;"></div>Negative - Career Opportunities
           </div>
           <div layout layout-align="center center" class="mr10 ml10">
-            <div class="bp mr10" style="width: 15px; height: 15px; border-radius: 3px;"></div>Excellent - Life@
+            <div class="bn mr10" style="width: 15px; height: 15px; border-radius: 3px;"></div>Neutral - Exposure
           </div>
         </div>
         <br>
@@ -45,7 +45,7 @@
     <span class="text-muted">Showing {{uni.pages[uni.currentPage].length}} of {{uni.totalItems}} Reviews</span>
     <div layout layout-align="space-between center">
       <md-button class="md-raised">Reset Filters</md-button>
-      <pagination boundary-links="false" total-items="uni.totalItems" ng-model="uni.currentPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" items-per-page='4'></pagination>
+      <pagination boundary-links="false" total-items="uni.totalItems" ng-model="uni.currentPage" class="pagination" previous-text="&lsaquo;" next-text="&rsaquo;" items-per-page='4'></pagination>
     </div>
   </div>
 </div>
