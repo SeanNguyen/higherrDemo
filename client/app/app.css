@@ -66,6 +66,18 @@ body {
   outline: none;
 }
 
+.btn-small {
+  font-size: 14px;
+  min-width: 50px;
+  padding: 0 5px 0 5px;
+  margin: 5px 0px 5px 0px;
+  font-weight: 400;
+}
+
+.btn-border {
+  border: 1px solid;
+}
+
 /*BACKGROUND*/
 
 .background-white {
@@ -170,6 +182,9 @@ html, body {
 
 /*MARGINS*/
 
+.m0 {
+  margin: 0px;
+}
 .m5 {
   margin: 5px;
 }
