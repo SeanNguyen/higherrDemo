@@ -1,0 +1,8 @@
+.secondary-navbar .searchBox {
+  background: transparent;
+  outline: none;
+  padding: 3px 20px;
+  border: 1px solid #FCFCFC;
+  font-size: 14px;
+  height: 40px;
+}

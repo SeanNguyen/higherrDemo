@@ -1,0 +1,21 @@
+<md-toolbar md-scroll-shrink class='higherr-navbar secondary-navbar' layout-align='center center'>
+  <div layout layout-align='center center' style='position:relative;width: 100%; max-width: 1000px;'>
+    <md-button class='btn-border' style='width: 100%; cursor: text;' ng-show='!secNav.isSearchOn' ng-click='secNav.turnOn()'>
+      Search for universities<i class="fa fa-search ml10"></i>
+    </md-button layout-align='center center'>
+    <div ng-show='secNav.isSearchOn' outside-click='secNav.disableTurnOff || secNav.turnOff()' layout layout-xs='column' layout-align='stretch center' layout-align-gt-xs='center center' flex class="ml10 mr10">
+      <md-button class="md-icon-button" aria-label="close" ng-click='secNav.turnOff();'>
+        <md-icon class='fa fa-times fa-lg'></md-icon>
+      </md-button>
+      <input flex class='searchBox' placeholder="University Name" focus-me='secNav.isSearchOn'></input>
+      <input flex class='searchBox' placeholder="Location"></input>
+      <md-button class="md-icon-button" aria-label="close" style='position: absolute;right:0px;bottom: 1px;' hide-xs>
+        <md-icon class='fa fa-search fa-lg'></md-icon>
+      </md-button>
+      <md-button class="md-icon-button" aria-label="close" style='position: absolute;right:0px;bottom: 5px;' hide-gt-xs>
+        <md-icon class='fa fa-search fa-lg'></md-icon>
+      </md-button>
+      <div style="height: 5px" hide-gt-xs></div>
+    </div>
+  </div>
+</md-toolbar>

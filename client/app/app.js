@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app', [
+var app = angular.module('app', [
   'app.constants',
   'ngCookies',
   'ngResource',
@@ -32,3 +32,40 @@ angular.module('app', [
       .primaryPalette('appTheme')
       .dark();
   });
+
+
+app.directive('focusMe', function($timeout) {
+  return {
+    scope: { trigger: '=focusMe' },
+    link: function(scope, element) {
+      scope.$watch('trigger', function(value) {
+        if(value === true) { 
+          $timeout(function() {
+            element[0].focus(); 
+          });
+        }
+      });
+    }
+  };
+});
+
+app.directive("outsideClick", ['$document','$parse', function( $document, $parse ){
+    return {
+        link: function( $scope, $element, $attributes ){
+            var scopeExpression = $attributes.outsideClick,
+                onDocumentClick = function(event){
+                    var isChild = $element.find(event.target).length > 0;
+
+                    if(!isChild) {
+                        $scope.$apply(scopeExpression);
+                    }
+                };
+
+            $document.on("click", onDocumentClick);
+
+            $element.on('$destroy', function() {
+                $document.off("click", onDocumentClick);
+            });
+        }
+    }
+}]);
