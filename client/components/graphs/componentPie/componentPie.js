@@ -14,6 +14,6 @@
   function ComponentPieController() {
     this.labels = ["", ""];
     this.data = [200, 800];
-    this.colors = ['#1bc4f8', '#023d4f'];
+    this.colors = ['#bae27d', '#7cb228'];
   }
 })();

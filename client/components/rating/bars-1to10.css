@@ -14,22 +14,22 @@
 }
 .br-theme-bars-1to10 .br-widget a.br-active,
 .br-theme-bars-1to10 .br-widget a.br-selected {
-  background-color: #00C853;
+  background-color: #9bd543;
 }
 .br-theme-bars-1to10 .br-widget .br-current-rating {
   font-size: 20px;
   line-height: 2;
   float: left;
   padding: 0 20px 0 20px;
-  color: #00C853;
+  color: #9bd543;
   font-weight: 400;
 }
 .br-theme-bars-1to10 .br-readonly a.br-active,
 .br-theme-bars-1to10 .br-readonly a.br-selected {
-  background-color: #00C853;
+  background-color: #9bd543;
 }
 .br-theme-bars-1to10 .br-readonly .br-current-rating {
-  color: #00C853;
+  color: #9bd543;
 }
 @media print {
   .br-theme-bars-1to10 .br-widget a {

@@ -34,6 +34,26 @@ var app = angular.module('app', [
       'contrastDefaultColor': 'light',
       'contrastDarkColors': '50 100 200 A100 A200'
     });
+
+    $mdThemingProvider.definePalette('appTheme', {
+       '50': '#f3fae9',
+  '100': '#d2ecab',
+  '200': '#bae27d',
+  '300': '#9bd543',
+  '400': '#8dcb2e',
+  '500': '#7cb228',
+  '600': '#6b9922',
+  '700': '#59801d',
+  '800': '#486717',
+  '900': '#364e12',
+      'A100': '#00C853',
+      'A200': '#00C853',
+      'A400': '#00C853',
+      'A700': '#00C853',
+      'contrastDefaultColor': 'light',
+      'contrastDarkColors': '50 100 200 A100 A200'
+    });
+
     // Use that theme for the primary intentions
     $mdThemingProvider.theme('default')
       .primaryPalette('appTheme')
