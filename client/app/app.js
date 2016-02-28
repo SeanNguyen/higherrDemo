@@ -16,13 +16,24 @@ var app = angular.module('app', [
 
     $locationProvider.html5Mode(true);
 
-    // Extend the red theme with a few different colors
-    var appTheme = $mdThemingProvider.extendPalette('red', {
-      '500': '046B8B',
-      'contrastDefaultColor': 'light',    // whether, by default, text (contrast)
+    $mdThemingProvider.definePalette('appTheme', {
+      '50': '#9ce5fc',
+      '100': '#52d2fa',
+      '200': '#1bc4f8',
+      '300': '#0699c6',
+      '400': '#0582a9',
+      '500': '#046b8b',
+      '600': '#03546d',
+      '700': '#023d4f',
+      '800': '#012632',
+      '900': '#010f14',
+      'A100': '#00C853',
+      'A200': '#00C853',
+      'A400': '#00C853',
+      'A700': '#00C853',
+      'contrastDefaultColor': 'light',
+      'contrastDarkColors': '50 100 200 A100 A200'
     });
-    // Register the new color palette map with the name <code>neonRed</code>
-    $mdThemingProvider.definePalette('appTheme', appTheme);
     // Use that theme for the primary intentions
     $mdThemingProvider.theme('default')
       .primaryPalette('appTheme')

@@ -13,6 +13,7 @@
 
   function ComponentPieController() {
     this.labels = ["", ""];
-    this.data = [300, 500];
+    this.data = [200, 800];
+    this.colors = ['#1bc4f8', '#023d4f'];
   }
 })();

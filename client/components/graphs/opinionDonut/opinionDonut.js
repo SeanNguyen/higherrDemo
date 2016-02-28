@@ -14,5 +14,6 @@
   function OpinionDonutController() {
     this.labels = ["", "", ""];
     this.data = [300, 500, 100];
+    this.colors = ['#012632', '#046b8b', '#1bc4f8']
   }
 })();

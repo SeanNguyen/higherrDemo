@@ -139,6 +139,10 @@ html, body {
   background-color: rgb(230, 230, 230);
 }
 
+a {
+  /*color: #0D47A1;*/
+}
+
 /*HEIGHT*/
 
 .h50 {

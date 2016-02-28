@@ -11,7 +11,7 @@
 }
 .br-theme-bars-horizontal .br-widget a.br-active,
 .br-theme-bars-horizontal .br-widget a.br-selected {
-  background-color: #046B8B;
+  background-color: #00C853;
 }
 .br-theme-bars-horizontal .br-widget .br-current-rating {
   width: 15px;
@@ -19,14 +19,14 @@
   font-weight: 600;
   line-height: 2;
   text-align: center;
-  color: #046B8B;
+  color: #00C853;
 }
 .br-theme-bars-horizontal .br-readonly a.br-active,
 .br-theme-bars-horizontal .br-readonly a.br-selected {
-  background-color: #046B8B;
+  background-color: #00C853;
 }
 .br-theme-bars-horizontal .br-readonly .br-current-rating {
-  color: #046B8B;
+  color: #00C853;
 }
 @media print {
   .br-theme-bars-horizontal .br-widget a {
