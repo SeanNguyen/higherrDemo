@@ -5,4 +5,26 @@
   border: 1px solid #FCFCFC;
   font-size: 14px;
   height: 40px;
+  font-weight: bold;
+}
+
+.secondary-navbar .searchBox::placeholder,  {
+  color: #EEE;
+  font-weight: normal;
+}
+.secondary-navbar .searchBox::-webkit-input-placeholder {
+  color: #EEE;
+  font-weight: normal;
+}
+.secondary-navbar .searchBox::-moz-placeholder {
+  color: #EEE;
+  font-weight: normal;
+}
+.secondary-navbar .searchBox:-ms-input-placeholder {
+  color: #EEE;
+  font-weight: normal;
+}
+.secondary-navbar .searchBox:-moz-placeholder {
+  color: #EEE;
+  font-weight: normal;
 }

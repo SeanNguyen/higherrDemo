@@ -75,9 +75,10 @@ md-autocomplete[md-floating-label] md-input-container {
 
 .main .info {
   color: #FCFCFC;
-  background-image: url(/assets/images/home-featureBackground.png);
+  background-image: url(/assets/images/home-featureBackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .main .info strong {
