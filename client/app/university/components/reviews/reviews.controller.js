@@ -5,6 +5,7 @@ function ReviewController($scope) {
   this.currentPage = 1;
   this.totalItems = 16;
   this.pages = [
+          [],
           [
             { 
               date: '02/11/2010', 
