@@ -2,8 +2,8 @@
 
 function ReviewController($scope) {
   this.type = $scope.reviewsType || 'life';
-  this.currentPage = 0;
-  this.totalItems = 11;
+  this.currentPage = 1;
+  this.totalItems = 16;
   this.pages = [
           [
             { 
