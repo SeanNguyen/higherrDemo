@@ -5,7 +5,123 @@
       Sort: Popular | <a href="#">Rating</a> | <a href="#">Date</a>
     </div>
   </div>
-  <div ng-repeat="review in reviews.pages[reviews.currentPage]">
+  <div ng-show='reviews.type !== "application"' ng-repeat="review in reviews.applicationPages[reviews.currentPage]">
+    <span class="text-muted m10" hide-xs>{{review.date}}</span>
+    <span class="text-muted mb10" hide-gt-xs>{{review.date}}</span>
+    <div layout>
+      <div class="logo-nus m10" style="width: 70px; height: 70px;" hide-xs></div>
+      <div flex>
+        <a href="#"><h4>{{review.title}}</h4></a>
+        <div layout="column" layout-gt-sm=' row' ng-show='reviews.type === "review"'>
+          <div class='mr20' layout>
+            <bar-rating rating-init=3 rating-type='stars' rating-size='md' rating-readonly='true'></bar-rating>
+            <md-button class="md-icon-button" aria-label="Detail" style='position: relative; bottom: 10px; right: 10px;'
+                popover-template='"app/university/components/reviews/rating-detail.html"'  popover-trigger="focus" popover-placement="bottom">
+              <md-icon class='fa fa-caret-down fa-lg'></md-icon>
+            </md-button>
+          </div>
+          <div class="text-muted">{{review.student.status}} - Class of {{review.student.time}}</div>
+        </div>
+        <div class="text-muted mb10" ng-show='reviews.type !== "review"'>{{review.student.status}} - Class of {{review.student.time}}</div>
+        <div layout layout-wrap layout-align="space-between center">
+          <div layout layout-align="center center" class="mr10 ml10">
+            <div class="bp mr10" style="width: 15px; height: 15px; border-radius: 3px;"></div>
+            <span ng-show='reviews.type === "review"'>Positive - Life@</span>
+            <span ng-show='reviews.type === "life"'>Excellent - Life@</span>
+            <span ng-show='reviews.type === "application"'>Accepted Offer</span>
+          </div>
+          <div layout layout-align="center center" class="mr10 ml10" ng-show='reviews.type !== "application"'>
+            <div class="bw mr10" style="width: 15px; height: 15px; border-radius: 3px;"></div>
+            <span ng-show='reviews.type === "review"'>Negative - Career Opportunities</span>
+            <span ng-show='reviews.type === "life"'>Top Oppotunity - Exchange</span>
+          </div>
+          <div layout layout-align="center center" class="mr10 ml10" ng-show='reviews.type !== "application"'>
+            <div class="bn mr10" style="width: 15px; height: 15px; border-radius: 3px;"></div>
+            <span ng-show='reviews.type === "review"'>Neutral - Exposure</span>
+            <span ng-show='reviews.type === "life"'>Average - Expense</span>
+          </div>
+          <div  flex class="mr10 ml10" ng-show='reviews.type === "application"'>
+            <label class="m0">2300 <span class="text-muted">(SAT score)</span></label>
+          </div>
+        </div>
+        <br>
+        <label ng-show='reviews.type !== "application"'>Pros</label><label ng-show='reviews.type === "application"'>Application</label>
+        <p>{{review.data1}}</p>
+        <label ng-show='reviews.type !== "application"'>Cons</label><label ng-show='reviews.type === "application"'>Interview</label>
+        <p>{{review.data2}}</p>
+        <div ng-show='reviews.type !== "application"'>
+          <label ng-show='reviews.type !== "life"'>Advice for Students</label><label ng-show='reviews.type === "life"'>Advice for Improvements</label>
+          <p>{{review.data3}}</p>
+        </div>
+        <div layout layout-align='space-between center'>
+          <md-button class='md-primary m0 btn-small btn-border'>Helpful <span class="text-muted">(2)</span></md-button>
+          <md-button class="md-icon-button md-warn btn-border" aria-label="Favorite">
+            <md-icon class='fa fa-flag-o fa-lg'></md-icon>
+          </md-button>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div ng-show='reviews.type !== "life"' ng-repeat="review in reviews.lifePages[reviews.currentPage]">
+    <span class="text-muted m10" hide-xs>{{review.date}}</span>
+    <span class="text-muted mb10" hide-gt-xs>{{review.date}}</span>
+    <div layout>
+      <div class="logo-nus m10" style="width: 70px; height: 70px;" hide-xs></div>
+      <div flex>
+        <a href="#"><h4>{{review.title}}</h4></a>
+        <div layout="column" layout-gt-sm=' row' ng-show='reviews.type === "review"'>
+          <div class='mr20' layout>
+            <bar-rating rating-init=3 rating-type='stars' rating-size='md' rating-readonly='true'></bar-rating>
+            <md-button class="md-icon-button" aria-label="Detail" style='position: relative; bottom: 10px; right: 10px;'
+                popover-template='"app/university/components/reviews/rating-detail.html"'  popover-trigger="focus" popover-placement="bottom">
+              <md-icon class='fa fa-caret-down fa-lg'></md-icon>
+            </md-button>
+          </div>
+          <div class="text-muted">{{review.student.status}} - Class of {{review.student.time}}</div>
+        </div>
+        <div class="text-muted mb10" ng-show='reviews.type !== "review"'>{{review.student.status}} - Class of {{review.student.time}}</div>
+        <div layout layout-wrap layout-align="space-between center">
+          <div layout layout-align="center center" class="mr10 ml10">
+            <div class="bp mr10" style="width: 15px; height: 15px; border-radius: 3px;"></div>
+            <span ng-show='reviews.type === "review"'>Positive - Life@</span>
+            <span ng-show='reviews.type === "life"'>Excellent - Life@</span>
+            <span ng-show='reviews.type === "application"'>Accepted Offer</span>
+          </div>
+          <div layout layout-align="center center" class="mr10 ml10" ng-show='reviews.type !== "application"'>
+            <div class="bw mr10" style="width: 15px; height: 15px; border-radius: 3px;"></div>
+            <span ng-show='reviews.type === "review"'>Negative - Career Opportunities</span>
+            <span ng-show='reviews.type === "life"'>Top Oppotunity - Exchange</span>
+          </div>
+          <div layout layout-align="center center" class="mr10 ml10" ng-show='reviews.type !== "application"'>
+            <div class="bn mr10" style="width: 15px; height: 15px; border-radius: 3px;"></div>
+            <span ng-show='reviews.type === "review"'>Neutral - Exposure</span>
+            <span ng-show='reviews.type === "life"'>Average - Expense</span>
+          </div>
+          <div  flex class="mr10 ml10" ng-show='reviews.type === "application"'>
+            <label class="m0">2300 <span class="text-muted">(SAT score)</span></label>
+          </div>
+        </div>
+        <br>
+        <label ng-show='reviews.type !== "application"'>Pros</label><label ng-show='reviews.type === "application"'>Application</label>
+        <p>{{review.data1}}</p>
+        <label ng-show='reviews.type !== "application"'>Cons</label><label ng-show='reviews.type === "application"'>Interview</label>
+        <p>{{review.data2}}</p>
+        <div ng-show='reviews.type !== "application"'>
+          <label ng-show='reviews.type !== "life"'>Advice for Students</label><label ng-show='reviews.type === "life"'>Advice for Improvements</label>
+          <p>{{review.data3}}</p>
+        </div>
+        <div layout layout-align='space-between center'>
+          <md-button class='md-primary m0 btn-small btn-border'>Helpful <span class="text-muted">(2)</span></md-button>
+          <md-button class="md-icon-button md-warn btn-border" aria-label="Favorite">
+            <md-icon class='fa fa-flag-o fa-lg'></md-icon>
+          </md-button>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div ng-show='reviews.type !== "review"' ng-repeat="review in reviews.reviewPages[reviews.currentPage]">
     <span class="text-muted m10" hide-xs>{{review.date}}</span>
     <span class="text-muted mb10" hide-gt-xs>{{review.date}}</span>
     <div layout>
